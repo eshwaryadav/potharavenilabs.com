@@ -1,13 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Potharaveni Labs</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    </head>
-    <body>
-        <h1 style="text-align: center;position:absolute; top:45%;width: 100%;">Welcome to Potharaveni Labs !!!!</h1>
-        <h2 style="text-align: center; position:absolute;bottom:5%;width: 100%; "> © Potharaveni Omkareshwar</h2>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Info</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body class="body">
+    <h6></h6>
+    <br>
+    <h1 class="labs">Potharaveni Labs</h1>
+    <div class="container" id="container1" >
+        <!-- Content here -->
+        <br>
+        <h3 class="head1">Enter Employ Details!!</h3>
+        <br>
+        <form class="form-align" action="" id="form-write">
+            <input type="text" name="first" id="first" placeholder="Enter employ first name">
+            <input type="text" name="last" id="last" placeholder="Enter employ last name">
+            <br><br>
+            <input type="tel" name="mobile" id="mobile" placeholder="Enter employ mobileno">
+            <br><br>
+            <input type="email" name="email" id="email" placeholder="Enter employ email">
+            <br><br>
+            <button type="submit" class="btn btn-primary" name="submit" id="submit" >Add</button>
+            <button type="submit" class="btn btn-dark" name="update" id="update" >Update</button>
+        </form>
+        <br>
+      </div>
+
+      <br>
+   
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md">
+            <!-- One of two columns -->
+
+            <div class="container">
+                <!-- Content here -->
+                <h3>Employ Details!!</h3>
+                <form class="form-align" action="" id="form-get">
+                    <input type="tel" name="id" id="id" placeholder="Enter employ ID">
+                    <br><br>
+                    <button type="submit" class="btn btn-primary name="get" id="get" >Get</button>
+                    <button type="submit" class="btn btn-danger" name="remove" id="remove" >Remove</button>
+                </form>
+            </div>
+
+          </div>
+
+          <br>
+
+          <div class="col-md">
+            <!-- second of two columns -->
+            <div class="container">
+                <!-- Content here -->
+                <h3>Get All Employees Details!!</h3>
+                <button type="submit" class="btn btn-success" name="all-get" id="all-get" >Get All</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <br>
+
+      <div class="container" id="container2" >
+        <!-- Content here -->
+        <table class="table" id="table-boot">
+           
+               
+          </table>
+    </div>
+    <div id ="table-div">
+        <table id="table"></table>
+    </div>
+
+    <div>
+        <h2 style="text-align: center; width: 100%; "> © Potharaveni Omkareshwar</h2>
+    </div>
+
+
+
+
+   
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+
+<script src="firebaseInit.js"></script>
+
+<script src="connect.js"></script>
+</body>
 </html>
