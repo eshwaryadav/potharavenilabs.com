@@ -1,0 +1,29 @@
+ .body{
+     background-color: whitesmoke;
+ }
+ .from-align{
+     text-align:center;
+ }
+ .labs{
+     top:10%;
+     color: cadetblue;
+     text-align: center;
+     align-items: center;
+   
+ }
+ #container1{
+    background-color: #ffdada;
+     text-align: center;
+ }
+
+ .head1{
+     text-align: center;
+     color: #290149;
+ }
+ #container2{
+    /* background-color: #ffdada; */
+    background-color: #ffdada;
+ }
+ #table-boot{
+     color: #121013;
+ }
