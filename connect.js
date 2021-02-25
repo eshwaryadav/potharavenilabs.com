@@ -57,7 +57,7 @@ update_btn.addEventListener('click',(e) =>{
 remove.addEventListener('click',() =>{
     // e.preventDefault();
     if (id.value == "") {
-        alert("Enter employ ID");
+        alert("Enter employ mobile number");
         return false;
       }
 
@@ -73,7 +73,7 @@ get_btn.addEventListener('click',(e) =>{
     deleteRows()
 
     if (id.value == "") {
-        alert("Enter employ ID");
+        alert("Enter employ mobile number");
         return false;
       }
     //   alert(id.value)
