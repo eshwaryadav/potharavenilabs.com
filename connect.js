@@ -66,12 +66,12 @@ remove.addEventListener('click',() =>{
 
 get_btn.addEventListener('click',(e) =>{
     // e.preventDefault();
-    deleteRows()
-
     if (id.value == "") {
         alert("Enter employ ID");
         return false;
       }
+      
+    deleteRows()
 
     var starCountRef = firebase.database().ref('users/employees/'+id.value);
 starCountRef.on('value', (snapshot) => {
