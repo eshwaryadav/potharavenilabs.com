@@ -67,9 +67,15 @@ remove.addEventListener('click',() =>{
 get_btn.addEventListener('click',(e) =>{
     e.preventDefault();
     deleteRows()
+
+    if (id.value == "") {
+        alert("Enter all details");
+        return false;
+      }
+
     var starCountRef = firebase.database().ref('users/employees/'+id.value);
 starCountRef.on('value', (snapshot) => {
-    var check =snapshot.val().mobilenumber
+    var check =snapshot.val()
     if( check == undefined ){
         alert("No details available")
     }else{
