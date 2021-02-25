@@ -39,6 +39,10 @@ add_btn.addEventListener('click',() =>{
 var rootRef =database.ref("users/employees")
 update_btn.addEventListener('click',(e) =>{
     // e.preventDefault();
+    if (first_name.value == ""||last_name.value == ""||mobile_number.value == ""||email.value == "") {
+        alert("Enter all details");
+        return false;
+      }
     
     rootRef.child(mobile_number.value).update({
         firstname :first_name.value,
