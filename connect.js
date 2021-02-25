@@ -65,11 +65,11 @@ remove.addEventListener('click',() =>{
 ///reading
 
 get_btn.addEventListener('click',(e) =>{
-    e.preventDefault();
+    // e.preventDefault();
     deleteRows()
 
     if (id.value == "") {
-        alert("Enter all details");
+        alert("Enter employ ID");
         return false;
       }
 
