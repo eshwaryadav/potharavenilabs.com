@@ -89,12 +89,12 @@ starCountRef.on('value', (snapshot) => {
     
     var header = x.createTHead();
     var row = header.insertRow(0);
-    var cell1 = row.insertCell(0).innerHTML = "<b>S.No.</b>";
-    var cell1 = row.insertCell(1).innerHTML = "<b>Employ ID</b>";
-    var cell1 = row.insertCell(2).innerHTML = "<b>First Name</b>";
-    var cell1 = row.insertCell(3).innerHTML = "<b>Last Name</b>";
-    var cell1 = row.insertCell(4).innerHTML = "<b>Mobile No.</b>";
-    var cell1 = row.insertCell(5).innerHTML = "<b>Email</b>";
+    row.insertCell(0).innerHTML = "<b>S.No.</b>";
+    row.insertCell(1).innerHTML = "<b>Employ ID</b>";
+    row.insertCell(2).innerHTML = "<b>First Name</b>";
+    row.insertCell(3).innerHTML = "<b>Last Name</b>";
+    row.insertCell(4).innerHTML = "<b>Mobile No.</b>";
+    row.insertCell(5).innerHTML = "<b>Email</b>";
     
   const f_n = snapshot.val().firstname;
   const s_n = snapshot.val().lastname;
@@ -103,12 +103,12 @@ starCountRef.on('value', (snapshot) => {
   
 //   for(i=1;i<=snapLength;i++){
     var row = x.insertRow(1);
-    var cell1 = row.insertCell(0).innerHTML = 1;
-    var cell1 = row.insertCell(1).innerHTML = m_n;
-    var cell1 = row.insertCell(2).innerHTML = f_n;
-    var cell1 = row.insertCell(3).innerHTML = s_n;
-    var cell1 = row.insertCell(4).innerHTML = m_n;
-    var cell1 = row.insertCell(5).innerHTML = em;
+    row.insertCell(0).innerHTML = 1;
+    row.insertCell(1).innerHTML = m_n;
+    row.insertCell(2).innerHTML = f_n;
+    row.insertCell(3).innerHTML = s_n;
+    row.insertCell(4).innerHTML = m_n;
+    row.insertCell(5).innerHTML = em;
 //   }
     }
 });
@@ -135,12 +135,12 @@ starCountRef.on('value', (snapshot) => {
 
     var header = x.createTHead();
     var row = header.insertRow(0);
-    var cell1 = row.insertCell(0).innerHTML = "<b>S.No.</b>";
-    var cell1 = row.insertCell(1).innerHTML = "<b>Employ ID</b>";
-    var cell1 = row.insertCell(2).innerHTML = "<b>First Name</b>";
-    var cell1 = row.insertCell(3).innerHTML = "<b>Last Name</b>";
-    var cell1 = row.insertCell(4).innerHTML = "<b>Mobile No.</b>";
-    var cell1 = row.insertCell(5).innerHTML = "<b>Email</b>";
+    row.insertCell(0).innerHTML = "<b>S.No.</b>";
+    row.insertCell(1).innerHTML = "<b>Employ ID</b>";
+    row.insertCell(2).innerHTML = "<b>First Name</b>";
+    row.insertCell(3).innerHTML = "<b>Last Name</b>";
+    row.insertCell(4).innerHTML = "<b>Mobile No.</b>";
+    row.insertCell(5).innerHTML = "<b>Email</b>";
     snapshot.forEach((childSnapshot) =>{
        
   const f_n = childSnapshot.val().firstname;
@@ -151,12 +151,12 @@ starCountRef.on('value', (snapshot) => {
   
 //   for(i=1;i<=snapLength;i++){
     var row = x.insertRow(i);
-    var cell1 = row.insertCell(0).innerHTML = i;
-    var cell1 = row.insertCell(1).innerHTML = m_n;
-    var cell1 = row.insertCell(2).innerHTML = f_n;
-    var cell1 = row.insertCell(3).innerHTML = s_n;
-    var cell1 = row.insertCell(4).innerHTML = m_n;
-    var cell1 = row.insertCell(5).innerHTML = em;
+    row.insertCell(0).innerHTML = i;
+    row.insertCell(1).innerHTML = m_n;
+    row.insertCell(2).innerHTML = f_n;
+    row.insertCell(3).innerHTML = s_n;
+    row.insertCell(4).innerHTML = m_n;
+    row.insertCell(5).innerHTML = em;
 //   }
         i++
 });
