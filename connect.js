@@ -56,7 +56,11 @@ update_btn.addEventListener('click',(e) =>{
 
 remove.addEventListener('click',() =>{
     // e.preventDefault();
-    
+    if (id.value == "") {
+        alert("Enter employ ID");
+        return false;
+      }
+
     rootRef.child(id.value).remove()
 
 })
@@ -65,17 +69,18 @@ remove.addEventListener('click',() =>{
 ///reading
 
 get_btn.addEventListener('click',(e) =>{
-    // e.preventDefault();
+    e.preventDefault();
+    deleteRows()
+
     if (id.value == "") {
         alert("Enter employ ID");
         return false;
       }
     //   alert(id.value)
-    deleteRows()
 
     var starCountRef = firebase.database().ref('users/employees/'+id.value);
 starCountRef.on('value', (snapshot) => {
-    var check =snapshot.val()
+    var check =snapshot.val().mobilenumber
     if( check == undefined ){
         alert("No details available")
     }else{
@@ -114,7 +119,7 @@ starCountRef.on('value', (snapshot) => {
 ///reading all employees
 
 getAll_btn.addEventListener('click',(e) =>{
-    e.preventDefault();
+    // e.preventDefault();
     deleteRows()
 
     var starCountRef = firebase.database().ref('users/employees');
