@@ -69,7 +69,7 @@ get_btn.addEventListener('click',(e) =>{
     deleteRows()
     var starCountRef = firebase.database().ref('users/employees/'+id.value);
 starCountRef.on('value', (snapshot) => {
-    var check =snapshot.val()
+    var check =snapshot.val().mobilenumber
     if( check == undefined ){
         alert("No details available")
     }else{
