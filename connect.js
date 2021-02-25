@@ -70,7 +70,7 @@ get_btn.addEventListener('click',(e) =>{
         alert("Enter employ ID");
         return false;
       }
-      
+    //   alert(id.value)
     deleteRows()
 
     var starCountRef = firebase.database().ref('users/employees/'+id.value);
